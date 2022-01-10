@@ -1,0 +1,197 @@
+/*The start game button*/
+.btn-1{
+    background: #000;
+    color: aliceblue;
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 10px;
+    left: 40; 
+    bottom: 100px;
+    z-index: 1;
+}
+
+/* The new game button*/
+.btn-2{
+    background: #000;
+    color: aliceblue;
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 10px;
+    left: 145px; 
+    bottom: 120px;
+    z-index: 1;
+}
+/*Pause game button AKA Button 'B' */
+.btn-3{
+    background: red;
+    color: aliceblue;
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    left: 300px; 
+    bottom: 185px;
+    z-index: 1;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin: 4px 2px;
+}
+/* Resume game button AKA Button 'A' */
+.btn-4{ 
+    background: red;
+    color: aliceblue;
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    left: 370px; 
+    bottom: 210px;
+    z-index: 1;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5px;
+    margin: 4px 2px;
+}
+/* The up arrow on the gameboy */
+.btn-5{ 
+    background: #000;
+    color: aliceblue;
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    left: 90px;
+    bottom: 220px;
+    z-index: 1;
+}
+/* Down arrow */
+.btn-6{ /*down arrow*/
+    background: #000;
+    color: aliceblue;
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    left: 90px;
+    bottom: 169px;
+    z-index: 1;
+}
+/* Left arrow */
+.btn-7{ 
+    background: #000;
+    color: aliceblue;
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: 53px;
+    bottom: 196px;
+    z-index: 1;
+}
+/*Right arrow*/
+.btn-8{ 
+    background: #000;
+    color: aliceblue;
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: 120px;
+    bottom: 195px;
+    z-index: 1;
+}
+
+.body{
+    position: fixed;
+    z-index: 999;
+}
+
+.gameboyCARD{ 
+    position: fixed;
+    z-index: -999;
+}
+
+.gameboyscreenCARD{ 
+    position: fixed;
+}
+
+.statusofGame{ 
+    position: fixed;
+    left: 1300px;
+    border: none;
+}
+/*ALL THE TEXT: 
+
+h1: 'B'
+h2: 'A'
+h3: 'START' 
+h4: 'NEW' 
+h5: 'Nitendo' 
+h6: 'GAMEBOY' 
+
+*/
+.h1{
+    color:#00509d;
+    position: absolute;
+    left: 320px; 
+    bottom: 140px;
+    z-index: 1;
+    font-size: 25px;
+    font-family: 'Open Sans';
+}
+
+.h2{
+    color:#00509d;
+    position: absolute;
+    left: 393px; 
+    bottom: 165px;
+    z-index: 1;
+    font-size: 25px;
+    font-family: 'Open Sans';
+}
+
+.h3{
+    color:#00509d;
+    position: absolute;
+    left: 215px; 
+    bottom: 55px;
+    z-index: 1;
+    font-size: 17px;
+    font-family: 'Open Sans';
+}
+
+.h4{
+    color:#00509d;
+    position: absolute;
+    left: 155px; 
+    bottom: 75px;
+    z-index: 1;
+    font-size: 17px;
+    font-family: 'Open Sans';
+}
+
+.h5{
+    color:#00509d;
+    position: absolute;
+    left: 5px;
+    bottom: 250px;
+    z-index: 1;
+    font-size: 20px;
+    font-family: 'Open Sans';
+}
+.h6{
+    color:#00509d;
+    position: absolute;
+    left: 90px;
+    bottom: 225px;
+    z-index: 1;
+    font-size: 25px;
+    font-family: 'Open Sans';
+}

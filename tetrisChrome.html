@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tetrisStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>        
+    <title>tetris</title>
+</head>
+<body>
+    <div id="score"></div>
+    <canvas id="tetris" width="300" height = "300"></canvas>
+
+    <script src="finalTetris.js"></script>
+
+    <div class="tetris" style="top: 0%;"> </div>
+<!-- Where all the buttons and design will be on -->
+    <style> 
+        .card{ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #E8E8E8	;
+            padding: 1.5em;
+            border-radius: 30px;
+            width: 50%;
+            width: 350px;
+            margin-left: 34.5%;
+            height: 25%;
+            position: fixed;
+            z-index: 1;
+        }
+    </style>
+
+</body>
+<!-- All the buttons and button functions -->
+<div class="card" style = "top:500px; color: #E8E8E8;">
+    <div>
+        <button onclick="startGame()" class="btn btn-1" style="cursor: pointer;"></button>
+        <button onclick="newGame()" class="btn btn-2" style="cursor: pointer"></button><br> &nbsp;&nbsp;&nbsp;
+        <button onclick="pauseGame()" class="btn btn-3" style="cursor: pointer;"></button> 
+        <button onclick="resumeGame()" class="btn btn-4" style="cursor: pointer"></button>  
+        <button onclick="upArrow()" class="btn btn-5" style="cursor: pointer;"></button>
+        <button onclick="downArrow()" class="btn btn-6" style="cursor: pointer;"></button>
+        <button onclick="leftArrow()" class="btn btn-7" style="cursor: pointer;"></button>
+        <button onclick="rightArrow()" class="btn btn-8" style="cursor: pointer;"></button>
+<!-- The text on the gameboy -->
+        <input class="statusofGame" id="pause_resume" style="background: #202028;" readonly> &nbsp;&nbsp;&nbsp;
+        <h1 class="h1">B</h1>
+        <h2 class="h2">A</h2>
+        <h3 class="h3">START</h3>
+        <h4 class="h4">NEW</h4>
+        <h5 class="h5"> Nintendo</h5>
+        <h6 class="h6"> GAME BOY</h6>
+
+    </div>
+    </div>
+    <!-- Grey card behind the screen and the actual GameBoy -->
+    <div class="gameboyCARD" style="justify-content: center; background: #E8E8E8;">
+    <div class="gameboyscreenCARD" style="justify-content: center; background: #888888;">
+
+    </div>
+    <style>
+         .gameboyCARD{
+                border-radius: 20px;
+                height: 700px;
+                padding: 1.5em;
+                top: 10px;
+                margin-left: 30%;
+                width: 500px;
+                background-repeat: no-repeat,repeat;
+            }
+
+            .gameboyscreenCARD{
+                border-radius: 20px;
+                height: 360px;
+                padding: 1.5em;
+                top: 30px;
+                width: 400px;
+                left: 620px
+            }
+    </style>
+
+<style>
+    body{
+        background: #202028;
+        color:#fff;
+        font-family: sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+        top: 30px;
+        margin: 50px;
+    }
+
+    canvas{
+        border: solid .2em #fff;
+        height: 45vh;
+        top: 0%;
+    }
+
+</style>
+</div>
+</html>
